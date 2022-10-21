@@ -1,0 +1,28 @@
+^C:\USERS\HP\DOWNLOADS\CHAT-FLUTTER-FIREBASE-MASTER\CHAT-FLUTTER-FIREBASE-MASTER\BUILD\WINDOWS\CMAKEFILES\CA29870165B2F5CE26F282525FF0B018\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\ephemeral PROJECT_DIR=C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master FLUTTER_TARGET=C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HP\DOWNLOADS\CHAT-FLUTTER-FIREBASE-MASTER\CHAT-FLUTTER-FIREBASE-MASTER\BUILD\WINDOWS\CMAKEFILES\C7EC08BDCC8B4C9DDFBF796FAE1EDE9A\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HP\DOWNLOADS\CHAT-FLUTTER-FIREBASE-MASTER\CHAT-FLUTTER-FIREBASE-MASTER\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/hp/Downloads/Chat-Flutter-Firebase-master/Chat-Flutter-Firebase-master/windows -BC:/Users/hp/Downloads/Chat-Flutter-Firebase-master/Chat-Flutter-Firebase-master/build/windows --check-stamp-file C:/Users/hp/Downloads/Chat-Flutter-Firebase-master/Chat-Flutter-Firebase-master/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

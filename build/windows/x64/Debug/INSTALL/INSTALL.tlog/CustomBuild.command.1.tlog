@@ -1,0 +1,10 @@
+^C:\USERS\HP\DOWNLOADS\CHAT-FLUTTER-FIREBASE-MASTER\CHAT-FLUTTER-FIREBASE-MASTER\BUILD\WINDOWS\CMAKEFILES\B17A4B678773AB9B467F12FCFE842A0E\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

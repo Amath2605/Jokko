@@ -1,0 +1,10 @@
+^C:\USERS\HP\DOWNLOADS\CHAT-FLUTTER-FIREBASE-MASTER\CHAT-FLUTTER-FIREBASE-MASTER\BUILD\WINDOWS\CMAKEFILES\B17A4B678773AB9B467F12FCFE842A0E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/hp/Downloads/Chat-Flutter-Firebase-master/Chat-Flutter-Firebase-master/windows -BC:/Users/hp/Downloads/Chat-Flutter-Firebase-master/Chat-Flutter-Firebase-master/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hp/Downloads/Chat-Flutter-Firebase-master/Chat-Flutter-Firebase-master/build/windows/app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

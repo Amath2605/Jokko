@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{30CE807F-8616-36F0-8B9F-BEB1BD693E8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{57776265-F0FC-3431-816A-A58445A810BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

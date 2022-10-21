@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\build\windows\CMakeFiles\ec2445ea70f384ab5ff08266192d6377\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{30CE807F-8616-36F0-8B9F-BEB1BD693E8D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

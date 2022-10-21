@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\build\windows\CMakeFiles\ca29870165b2f5ce26f282525ff0b018\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\build\windows\CMakeFiles\c7ec08bdcc8b4c9ddfbf796fae1ede9a\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\hp\Downloads\Chat-Flutter-Firebase-master\Chat-Flutter-Firebase-master\build\windows\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{30CE807F-8616-36F0-8B9F-BEB1BD693E8D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
