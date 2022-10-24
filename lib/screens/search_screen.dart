@@ -100,7 +100,7 @@ class _SearchScreenState extends State<SearchScreen> {
           margin: const EdgeInsets.all(20),
           child: Column(
             children: [
-              const SizedBox(height: 30),
+              const SizedBox(height : 30),
               TextFormField(
                 onChanged: (value) => {setState(() {})},
                 controller: _searchController,
@@ -108,13 +108,13 @@ class _SearchScreenState extends State<SearchScreen> {
                   labelText: 'Search',
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height : 30),
               CupertinoButton(
                 onPressed: null,
                 color: Theme.of(context).primaryColor,
                 child: const Text('Search'),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height : 30),
               StreamBuilder(
                 // dummy data
                 initialData:
