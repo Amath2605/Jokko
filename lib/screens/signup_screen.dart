@@ -50,8 +50,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
     behavior: SnackBarBehavior.floating,
     backgroundColor: Colors.transparent,
     content: AwesomeSnackbarContent(
-      title: 'Success',
-      message: 'Your account was created successfully',
+      title: 'Succès',
+      message: 'Votre compte a été créé avec succès',
       contentType: ContentType.success,
     ),
   );
@@ -152,7 +152,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: Column(
                   children: [
                     const Text(
-                      'SignUp',
+                      'Sinscrire',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -160,7 +160,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     const SizedBox(height : 16),
                     const Text(
-                      'Make A New Account',
+                      'Créer un nouveau compte',
                       style: TextStyle(
                         fontSize: 16,
                       ),
@@ -170,7 +170,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       controller: emailController,
                       validator: (value) => Validators.emailValidation(value),
                       decoration: const InputDecoration(
-                        labelText: 'Email Address',
+                        labelText: 'Adresse email',
                       ),
                     ),
                     const SizedBox(height : 16),
@@ -179,7 +179,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       validator: (value) =>
                           Validators.passwordValidation(value),
                       decoration: const InputDecoration(
-                        labelText: 'Password',
+                        labelText: 'Mot de passe',
                       ),
                     ),
                     const SizedBox(height : 16),
@@ -187,13 +187,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       controller: confirmPasswordController,
                       validator: (value) {
                         if (value != passwordController.text) {
-                          return 'Passwords Do not Match';
+                          return 'Les mots de passe ne correspondent pas';
                         }
 
                         return null;
                       },
                       decoration: const InputDecoration(
-                        labelText: 'Confirm Password',
+                        labelText: 'Confirmer le mot de passe',
                       ),
                     ),
                     const SizedBox(height : 16),
@@ -213,12 +213,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       );
                                     }
                                   : null,
-                              child: const Text('Sign Up'),
+                              child: const Text('Sinscrire'),
                             ),
                           ),
                     const SizedBox(height : 16),
                     const Text(
-                      'Have an account?',
+                      'Aviez-vous un compte?',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.blue,
@@ -226,7 +226,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     const SizedBox(height : 16),
                     ElevatedButton(
-                      child: const Text('Login'),
+                      child: const Text('Connexion'),
                       onPressed: () {
                         Navigator.pushReplacement(
                           context,

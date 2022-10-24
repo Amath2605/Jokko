@@ -55,7 +55,7 @@ class _SearchScreenState extends State<SearchScreen> {
             newChatRoom.toMap(),
           )
           .whenComplete(
-            () => log("New chat room created"),
+            () => log("Nouvelle discussion créée"),
           );
       chatRoom = newChatRoom;
     }

@@ -7,26 +7,26 @@ RegExp specialReg = RegExp(r".*[!@#$%^&*()_+\-=\[\]{};':" "\\|,.<>/?].*");
 class Validators {
   static String? emailValidation(String? value) {
     if (value!.isEmpty) {
-      return 'Please enter an email';
+      return 'Veuillez saisir un e-mail';
     }
     if (!value.contains("@")) {
-      return 'Email cannot be without "@';
+      return 'Le email ne peut pas secrire sans "@"';
     }
     return null;
   }
 
   static String? passwordValidation(String? value) {
     if (value!.isEmpty) {
-      return "Password is required";
+      return "Mot de passe requis";
     }
     if (!numReg.hasMatch(value)) {
-      return "Password must contain at least one number";
+      return "le mot de passe doit contenir au moins un chiffre";
     }
     if (!letterReg.hasMatch(value)) {
-      return "Password must contain at least one letter";
+      return "Le mot de passe doit contenir au moins une lettre";
     }
     if (value.length < 8) {
-      return "Password must be at least 8 characters";
+      return "Mot de passe doit être d'au moins 8 caractères";
     }
     return null;
   }
