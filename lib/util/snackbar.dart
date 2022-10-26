@@ -5,12 +5,12 @@ class MySnackbar {
   static SnackBar successSnackBar(String message) {
     return SnackBar(
       duration: const Duration(seconds: 3),
-      width: double.infinity,
+      width : double.infinity,
       elevation: 0,
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
       content: AwesomeSnackbarContent(
-        title: "Success",
+        title: "Succes",
         message: message,
         contentType: ContentType.success,
       ),
@@ -19,12 +19,12 @@ class MySnackbar {
   static SnackBar faliureSnackBar(String message) {
     return SnackBar(
       duration: const Duration(seconds: 3),
-      width: double.infinity,
+      width : double.infinity,
       elevation: 0,
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
       content: AwesomeSnackbarContent(
-        title: "Falure",
+        title: "Echec",
         message: message,
         contentType: ContentType.failure,
       ),

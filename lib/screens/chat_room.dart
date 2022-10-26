@@ -68,7 +68,7 @@ class _ChatRoomState extends State<ChatRoom> {
           )
           .whenComplete(
         () {
-          log("Message sent");
+          log("Message envoyé");
         },
       );
 
@@ -99,7 +99,7 @@ class _ChatRoomState extends State<ChatRoom> {
                     backgroundColor: Colors.grey,
                     child: Icon(Icons.person),
                   ),
-            const SizedBox(width: 15),
+            const SizedBox(width : 15),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -107,7 +107,7 @@ class _ChatRoomState extends State<ChatRoom> {
                 StreamBuilder(
                   // get user isOnline status
                   stream: FirebaseFirestore.instance
-                      .collection("users")
+                      .collection("utilisateurs")
                       .doc(widget.targetUser.userId)
                       .snapshots(),
                   builder: (context, AsyncSnapshot<DocumentSnapshot> snapshot) {
@@ -115,21 +115,21 @@ class _ChatRoomState extends State<ChatRoom> {
                     return snapshot.hasData
                         ? snapshot.data!.get("isOnline")
                             ? const Text(
-                                "Online",
+                                "En ligne",
                                 style: TextStyle(
                                   color: Colors.green,
                                   fontSize: 12,
                                 ),
                               )
                             : const Text(
-                                "Offline",
+                                "hors ligne",
                                 style: TextStyle(
                                   color: Colors.red,
                                   fontSize: 12,
                                 ),
                               )
                         : const Text(
-                            "Offline",
+                            "hors ligne",
                             style: TextStyle(
                               color: Colors.red,
                               fontSize: 12,
@@ -145,7 +145,7 @@ class _ChatRoomState extends State<ChatRoom> {
       body: SafeArea(
         child: Column(
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height : 20),
             Expanded(
               child: StreamBuilder(
                 stream: FirebaseFirestore.instance
@@ -217,7 +217,7 @@ class _ChatRoomState extends State<ChatRoom> {
                                         //     ? Alignment.centerRight
                                         //     : Alignment.centerLeft,
                                         constraints: const BoxConstraints(
-                                          maxWidth: 250,
+                                          maxWidth : 250,
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                           vertical: 10,
@@ -226,7 +226,7 @@ class _ChatRoomState extends State<ChatRoom> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.black,
-                                            width: 2,
+                                            width : 2,
                                           ),
                                           borderRadius:
                                               BorderRadius.circular(15),
@@ -248,7 +248,7 @@ class _ChatRoomState extends State<ChatRoom> {
                                         ),
                                       ),
                                       const SizedBox(
-                                        height: 5,
+                                        height : 5,
                                       ),
                                       Text(
                                         //  + ${DateTime.parse(currentMessage.sentTime.toString()).second} + ${DateTime.parse(currentMessage.sentTime.toString()).millisecond}
@@ -300,14 +300,14 @@ class _ChatRoomState extends State<ChatRoom> {
                 enabledBorder: const OutlineInputBorder(
                   borderSide: BorderSide(
                     color: Colors.blueGrey,
-                    width: 2,
+                    width : 2,
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                   borderSide: const BorderSide(
                     color: Colors.grey,
-                    width: 2,
+                    width : 2,
                   ),
                 ),
               ),

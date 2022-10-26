@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
                 // ignore: use_build_context_synchronously
                 ScaffoldMessenger.of(context).showSnackBar(
-                  MySnackbar.successSnackBar("Logged Out Successfully"),
+                  MySnackbar.successSnackBar("Déconnecté avec succès"),
                 );
               },
               icon: const Icon(Icons.logout),
@@ -138,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             } else {
                               return const Center(
                                 child: Text(
-                                  "No chats yet. Start chatting with someone",
+                                  "Pas encore de chat. Commencer à discuter avec quelqu'un",
                                 ),
                               );
                             }
@@ -151,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   return Center(child: Text(snapshot.error.toString()));
                 } else {
                   return const Center(
-                      child: Text("No chats yet. Start chatting with someone"));
+                      child: Text("Pas encore de chat. Commencer à discuter avec quelqu'un"));
                 }
               }
             }),

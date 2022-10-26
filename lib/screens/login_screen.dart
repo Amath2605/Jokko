@@ -49,8 +49,8 @@ class _LoginScreenState extends State<LoginScreen> {
     behavior: SnackBarBehavior.floating,
     backgroundColor: Colors.transparent,
     content: AwesomeSnackbarContent(
-      title: 'Success',
-      message: 'You have logged in successfully',
+      title: 'Succes',
+      message: 'Vous vous êtes connecté avec succès',
       contentType: ContentType.success,
     ),
   );
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
       content: AwesomeSnackbarContent(
-        title: 'Error',
+        title: 'Erreur',
         message: e.message.toString(),
         contentType: ContentType.failure,
       ),
@@ -150,15 +150,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   children: [
                     const Text(
-                      'Login',
+                      'CONNEXION JOKKO',
                       style: TextStyle(
-                        fontSize: 24,
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     const SizedBox(height : 16),
                     const Text(
-                      'Login to your account',
+                      'Connectez-vous à votre compte',
                       style: TextStyle(
                         fontSize: 16,
                       ),
@@ -177,7 +177,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       validator: (value) =>
                           Validators.passwordValidation(value),
                       decoration: const InputDecoration(
-                        labelText: 'Password',
+                        labelText: 'Mot de passe',
                       ),
                     ),
                     const SizedBox(height : 16),
@@ -197,12 +197,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                       );
                                     }
                                   : null,
-                              child: const Text('Login'),
+                              child: const Text('connexion'),
                             ),
                           ),
                     const SizedBox(height : 16),
                     const Text(
-                      'Forgot password?',
+                      'Mot de passe oubliée?',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.blue,
@@ -210,7 +210,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     const SizedBox(height : 16),
                     const Text(
-                      'Don\'t have an account?',
+                      'Vous n\'avez pas de compte ?',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.blue,
@@ -218,7 +218,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     const SizedBox(height : 16),
                     ElevatedButton(
-                      child: const Text('Sign up'),
+                      child: const Text('S\'inscrire'),
                       onPressed: () {
                         Navigator.pushReplacement(
                           context,

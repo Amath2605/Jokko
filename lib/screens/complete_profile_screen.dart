@@ -61,12 +61,12 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
   SnackBar errorSnackBar(String message) {
     return SnackBar(
       duration: const Duration(seconds: 3),
-      width: double.infinity,
+      width : double.infinity,
       elevation: 0,
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
       content: AwesomeSnackbarContent(
-        title: 'Error',
+        title: 'Erreur',
         message: message,
         contentType: ContentType.failure,
       ),
@@ -78,7 +78,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text("Upload Photo"),
+          title: const Text("Mise à jour Photo"),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -87,7 +87,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                   Navigator.pop(context);
                   selectImage(ImageSource.gallery);
                 },
-                title: const Text("Select from gallery"),
+                title: const Text("Selectionner dans le gallerie"),
                 leading: const Icon(Icons.photo_album),
               ),
               ListTile(
@@ -95,7 +95,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                   Navigator.pop(context);
                   selectImage(ImageSource.camera);
                 },
-                title: const Text("Take a photo"),
+                title: const Text("Prendre une photo"),
                 leading: const Icon(Icons.camera_alt),
               ),
             ],
@@ -112,7 +112,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
     try {
       if (imageFile != null) {
         UploadTask uploadTask = FirebaseStorage.instance
-            .ref("profilePictures")
+            .ref("PhotoProfile")
             .child(widget.userModel.userName.toString())
             .putFile(
               imageFile!,
@@ -126,7 +126,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
       widget.userModel.userName = fullName;
 
       FirebaseFirestore.instance
-          .collection("users")
+          .collection("utilisateurs")
           .doc(widget.userModel.userId)
           .set(
             widget.userModel.toMap(),
@@ -137,7 +137,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
           setState(() {
             loading = false;
           });
-          MySnackbar.successSnackBar("Profile info set successfully");
+          MySnackbar.successSnackBar("Les informations de profil ont été définies avec succès");
           Navigator.popUntil(
             context,
             (route) {
@@ -165,7 +165,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Complete Your Profile"),
+        title: const Text("Complete ton profile"),
       ),
       body: SafeArea(
         child: Form(
@@ -196,16 +196,16 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                 TextFormField(
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return "Please enter your name";
+                      return "svp veuillez entrer ton nom";
                     }
                     return null;
                   },
                   controller: nameConroller,
                   decoration: const InputDecoration(
-                    labelText: 'Name',
+                    labelText: 'Nom',
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height : 16),
                 loading
                     ? const Center(child: CircularProgressIndicator())
                     : ElevatedButton(

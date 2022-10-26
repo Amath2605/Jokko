@@ -93,7 +93,7 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Search Screen'),
+        title: const Text('Écran de recherche'),
       ),
       body: SafeArea(
         child: Container(
@@ -112,7 +112,7 @@ class _SearchScreenState extends State<SearchScreen> {
               CupertinoButton(
                 onPressed: null,
                 color: Theme.of(context).primaryColor,
-                child: const Text('Search'),
+                child: const Text('rechercher'),
               ),
               const SizedBox(height : 30),
               StreamBuilder(
@@ -179,7 +179,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     } else if (snapshot.hasError) {
                       return Text(snapshot.error.toString());
                     } else {
-                      return const Text("No Data");
+                      return const Text("Pas de données");
                     }
                   }
                 },

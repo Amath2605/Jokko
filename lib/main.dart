@@ -45,9 +45,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.black,
         ),
-        scaffoldBackgroundColor: Colors.blueGrey.shade900,
+        scaffoldBackgroundColor: Colors.green,
       ),
       home: const LoginScreen(),
     );
@@ -73,7 +73,7 @@ class AppLoggedIn extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.black,
         ),
-        scaffoldBackgroundColor: Colors.blueGrey.shade900,
+        scaffoldBackgroundColor: Colors.green,
       ),
       home: HomeScreen(
         firebaseUser: firebaseUser,
